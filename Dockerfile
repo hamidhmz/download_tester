@@ -1,3 +1,3 @@
 FROM node
-WORKDIR /app
+WORKDIR /home/banico/test
 CMD ["sh","-c"," npm install && node app"]
