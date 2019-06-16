@@ -1,3 +1,4 @@
+var throttle = require('express-throttle-bandwidth');
 const express = require("express");
 const fs = require('fs');
 const path = require("path");
@@ -9,7 +10,7 @@ const app = express();
 //   response.pipe(file);
 // });//this is for download to hd drive
 
-
+app.use(throttle(100000));
 app.get("/",(req,res)=>{
     const now = Math.floor(Date.now()/1000)
     
