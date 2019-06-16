@@ -6,6 +6,6 @@ services:
     build: .
     volumes:
       - ./:/home/banico/test
-    # tty: true
+    tty: true
     ports:
       - '80:80'
