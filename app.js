@@ -10,7 +10,7 @@ const app = express();
 //   response.pipe(file);
 // });//this is for download to hd drive
 
-app.use(throttle(100000));
+app.use(throttle(10));
 app.get("/",(req,res)=>{
     const now = Math.floor(Date.now()/1000)
     
