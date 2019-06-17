@@ -13,7 +13,8 @@ app.get("/",(req,res)=>{
     
     const filePath = path.join(__dirname, '1.zip');
 
-    streamDownloader.stream(filePath,res,now);
+    // streamDownloader.stream(filePath,res,now);
+    streamDownloader.streamSleep(filePath,res,now,1000);
 
     // res.download(filePath, (err) => {
     //     if (err) {
