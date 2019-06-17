@@ -8,4 +8,4 @@ services:
       - ./:/home/banico/test
     tty: true
     ports:
-      - '80:80'
+      - '4000:80'
